@@ -1,14 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<title>PetSalud</title>
 <meta charset="UTF-8">
+<title>PetSalud</title>
+
 <style>
-body{font-family:Arial;margin:0;background:#f5f5f5;text-align:center}
-header{background:#2c7be5;color:white;padding:20px}
-h1{margin:0}
-.plan{background:white;border-radius:10px;padding:20px;margin:20px;display:inline-block;width:250px}
-.btn{background:#28a745;color:white;padding:15px 25px;border-radius:8px;text-decoration:none}
+
+body{
+margin:0;
+font-family:Arial;
+background:#f4f6f9;
+}
+
+header{
+background:linear-gradient(90deg,#1f6ed4,#28a745);
+color:white;
+padding:60px 20px;
+text-align:center;
+}
+
+header h1{
+font-size:48px;
+margin:0;
+}
+
+header p{
+font-size:20px;
+}
+
+.btn{
+background:#28a745;
+color:white;
+padding:15px 30px;
+border-radius:8px;
+text-decoration:none;
+display:inline-block;
+margin-top:20px;
+font-weight:bold;
+}
+
+section{
+padding:50px 20px;
+text-align:center;
+}
+
+.planes{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.plan{
+background:white;
+padding:25px;
+border-radius:10px;
+width:250px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.plan h3{
+margin-top:0;
+}
+
+footer{
+background:#222;
+color:white;
+padding:20px;
+text-align:center;
+}
+
 </style>
 </head>
 
@@ -16,10 +77,14 @@ h1{margin:0}
 
 <header>
 <h1>PetSalud</h1>
-<p>Obra social para mascotas en San Juan</p>
+<p>La obra social para mascotas en San Juan</p>
+<a class="btn">Afiliar mi Mascota</a>
 </header>
 
+<section>
 <h2>Nuestros Planes</h2>
+
+<div class="planes">
 
 <div class="plan">
 <h3>Plan Básico</h3>
@@ -39,9 +104,17 @@ h1{margin:0}
 <p>Cobertura total y emergencias</p>
 </div>
 
-<br><br>
+</div>
+</section>
 
-<a class="btn" href="#">Afiliar mi Mascota</a>
+<section>
+<h2>Veterinarias Asociadas</h2>
+<p>Zona Norte • Centro • Rivadavia • Rawson</p>
+</section>
+
+<footer>
+<p>© 2024 PetSalud</p>
+</footer>
 
 </body>
 </html>
